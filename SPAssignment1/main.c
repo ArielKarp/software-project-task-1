@@ -4,6 +4,8 @@
  *      Author: Ariel
  */
 
+#include <stdio.h>
+#include <stdlib.h>
 
 
 void printIntArr(int* arr) {
