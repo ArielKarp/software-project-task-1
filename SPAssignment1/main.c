@@ -126,6 +126,8 @@ int char_in(char ch, char arr[], int len) {
 
 int main() {
 
+
+
 	int baseA;
 	int baseB;
 	int arrA[32] = { 0 };
