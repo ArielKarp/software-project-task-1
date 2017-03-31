@@ -8,6 +8,7 @@
 #include <stdlib.h>
 
 
+
 void printIntArr(int* arr) {
 	int i = 0;
 	printf("\nArr:\n");
