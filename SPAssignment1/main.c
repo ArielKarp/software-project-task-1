@@ -93,9 +93,6 @@ int convertDecimalToNumber(int numDec, int outArr[], int baseOut) {
 	return count;
 }
 
-
-
-
 void converDecimalToString(int decNum[], char strOut[], int len) {
 	int index =0;
 	int digit = 0;
