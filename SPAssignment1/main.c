@@ -42,8 +42,6 @@ int convertNumberToDecimal(int arrIn[], int sizeOfArry, int inBase) {
 	for (; index < sizeOfArry; ++index) {
 		decimalConvert = decimalConvert
 				+ (arrIn[sizeOfArry - index - 1] * powIm(inBase, index));
-		printf("Debug# Decimal: %d, arr[i]: %d, pow: %d\n", decimalConvert,
-				arrIn[sizeOfArry - index - 1], powIm(inBase, index));
 	}
 	return decimalConvert;
 }
@@ -84,8 +82,6 @@ int convertDecimalToNumber(int numDec, int outArr[], int baseOut) {
 	int slicedArr[count];
 	sliceArray(outNum, slicedArr, count);
 	reveseArray(slicedArr, count);
-	printIntArr(slicedArr, count);
-	printf("\n");
 	index = 0;
 	for (; index < count; index++) {
 		outArr[index] = slicedArr[index];
@@ -138,6 +134,7 @@ int main() {
 	char optionalChars[] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
 			'A', 'a', 'B', 'b', 'C', 'c', 'D', 'd', 'E', 'e', 'F', 'f' };
 
+
 	printf("Please enter the number's base:\n");
 	scanf("%d", &baseA);
 	if (!int_in(baseA, optionalBases,
@@ -182,18 +179,16 @@ int main() {
 		}
 		countNum++;
 	}
+
 	if (invalidNum) {
 		printf("Invalid number!\n");
+		return 0;
 	}
 
 	int slicedArr[countNum];
 	sliceArray(arrA, slicedArr, countNum);
-	printIntArr(slicedArr, countNum);
-	printf("\n");
 	decNum = convertNumberToDecimal(slicedArr, countNum, baseA);
-	printf("Debug# Decimal num: %d\n", decNum);
 	finalNumSize = convertDecimalToNumber(decNum, slicedArr, baseB);
-	printf("Debug# FinalNumSize: %d\n", finalNumSize);
 	char strNum[countNum];
 	converDecimalToString(slicedArr, strNum, finalNumSize);
 	printf("The result is : %s\n", strNum);
