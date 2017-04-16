@@ -1,7 +1,7 @@
 /*
  * main.c
  *
- *      Author: Ariel Karpilovsky 308552454
+ *      Author: Ariel Karpilovski 308552454
  *      		Ron Tabibian 308472596
  */
 
