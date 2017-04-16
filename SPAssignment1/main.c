@@ -1,27 +1,12 @@
 /*
  * main.c
  *
- *      Author: Ariel
+ *      Author: Ariel Karpilovsky
+ *      		Ron Tabibian 308472596
  */
 
 #include <stdio.h>
 #include <stdlib.h>
-
-void printIntArr(int* arr, int len) {
-	int i = 0;
-	printf("\nArr:\n");
-	for (; i < len; ++i) {
-		printf("%d ", arr[i]);
-	}
-}
-
-void printCharArr(char* arr) {
-	int i = 0;
-	printf("\nArr:\n");
-	for (; i < 3; ++i) {
-		printf("%c", arr[i]);
-	}
-}
 
 // p >= 0
 int powIm(int num, int p) {
